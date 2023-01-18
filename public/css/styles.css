@@ -26,16 +26,11 @@ header {
     background-color: #EAC926;
     width: 100%
 }
-
-
-
-
-.logo-header {
-    width: 45%;
-    margin-right: 60px;
+img.logoHeader{
+    width: 50vw;
     margin-top: 20px;
-    margin-left: 20px;
     height: auto;
+    margin-left: 10px;
 }
 
 .header-title {
@@ -43,6 +38,46 @@ header {
     font-size: 12px;
     font-weight: lighter;
     margin-top: 15px;
+}
+input{
+    margin-top: 10px;
+    margin-left: 15px;
+    outline: none;
+    padding: 2px;
+    background-color: #FFF;
+    color: #666;
+    border: solid 1px #000; 
+}
+button{
+    background-color: #FFF;
+    color: #666;
+    border: solid 1px #000; 
+}
+.search-field {
+    width: 35vw;
+    padding: 5px 30px 5px 5px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+}
+  
+.search-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -33px;
+}
+  
+.search-button img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+.search-bar{
+    margin-top: 15px;
+}
+div.top-header{
+    display: flex;
 }
 
 li a {
@@ -85,7 +120,7 @@ main{
         font-size: 24px;
         text-align: left;
         margin: 20px;
-        color: #6666;
+        color: black;
         margin-left: 10px;
         margin-right: 10px;
      }
@@ -151,6 +186,11 @@ main section h4{
 }
 /*FOOTER*/
 
+footer{
+    margin-top: 25px;
+    text-align: center;
+}
+
 .footer-icon{
     display: block;
     margin-left: auto;
@@ -160,15 +200,16 @@ main section h4{
     text-align: center;
     color: #1259c3;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 
 footer h4{
-    margin-top: 20px;
+    margin-top: 40px;
     margin-bottom: 15px;
     margin-left: 10px;
-    text-align: left;
-    font-size: 10px;
+    text-align: center;
+    font-size: 15px;
 }
 footer section h3{
     font-size: 16px;
@@ -177,6 +218,7 @@ footer section h3{
 
 footer section p{
     text-align: center;
+    font-size: 12px;
 }
 
 
@@ -191,15 +233,45 @@ footer section p{
 
 /* TABLETS */
 @media (min-width: 361px){
+    top-header{
+        display: flex;
+        flex-wrap: wrap;
+    }
     article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100)
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 40vw;
     }
     .burger-menu{
         display: none;
     }
+    .products{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .lista1 {
+    }
+    .lista2 {
+       
+    }
+    
 }
 
 /* DESKTOP */
 @media (min-width: 769px){
+    article{
+        width: 20vw;
+    }
     
+    footer i:hover{
+        color: grey;
+    }
+    .products{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
 }

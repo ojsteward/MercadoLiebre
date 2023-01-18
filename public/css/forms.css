@@ -36,9 +36,22 @@ header {
 
 input{
     margin-top: 10px;
-    margin-left: 15px;
+}
+.search-button img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+img.logoHeader{
+    width: 35vw;
+    margin-top: 20px;
+    height: auto;
+    
 }
 
+div.top-header{
+    display: flex;
+}
 .header-title {
     text-align: center;
     font-size: 12px;
@@ -92,7 +105,29 @@ form{
 button .enviar:hover{
     background-color: #0022AA;
 } 
-
+.search-field {
+    width: 35vw;
+    padding: 5px 30px 5px 5px;
+    border: none;
+    border-radius: 100px;
+    outline: none;
+}
+  
+.search-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -33px;
+}
+  
+.search-button img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+.search-bar{
+    margin-top: 15px;
+}
 /* .main-title{
     font-size: 16px;
     text-align: left;

@@ -13,21 +13,24 @@ rel="stylesheet" />
   </head>
 <body>
   <header>
-    <img class= "logo-header" src="./images/logo-mercado-liebre.svg" alt="">
-
-    <input type="search" placeholder="Buscar productos, marcas y más">
-    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <div class="top-header">
+        <img class="logoHeader" src="./images/logo-mercado-liebre.svg" alt="" />
+        <div class="search-bar">
+          <input type="search" placeholder="Buscar productos, marcas y más" class="search-field">
+          <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+  </div>
     <h3 class= header-title><i class="fa-solid fa-hand-holding-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</h3>
     
     <nav>
-      <ul>
+      <ul class="lista1">
         <li><a href="" target="_blank"> Ofertas</a></li>
         <li><a href="" target="_blank"> Tiendas Oficiales</a></li>
         <li><a href="" target="_blank"> Vender</a></li>
         <li><a href="" target="_blank"> Ayuda</a></li>
       </ul>
 
-      <ul>
+      <ul class="lista2">
         <li><a href="/register" target="_blank">Creá tu cuenta</a><i class="fa-regular fa-id-card"></i></li>
         <li><a href="/login" target="_blank">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
         <li><a href="" target="_blank">Mis Compras</a><i class="fa-solid fa-basket-shopping"></i></li>
@@ -40,6 +43,7 @@ rel="stylesheet" />
     <main>
         <section>
             <h3 class= "main-title">Basado en tu última visita</h3>
+            <div class="products">
             <article>
               <img src='../images/img-cafetera-moulinex.jpg' alt=''>
               <div class="descripciones">
@@ -50,7 +54,6 @@ rel="stylesheet" />
                 <h4>Cafetera Moulinex</h4>
                 </div>
                 </div>
-              </div>
             </article>
 
             <article>
@@ -88,10 +91,13 @@ rel="stylesheet" />
               </div> 
               </div> 
             </article>
+          </div>
         </section>
         <section>
-          <h3 class= "main-title">Ofertas</h3>
-          <article>
+            <h3 class= "main-title">Ofertas</h3>
+            <div class="products">
+            <article>
+            <div class="all-articles">
             <img src='../images/img-cafetera-moulinex.jpg' alt=''>
             <div class="descripciones">
               <i class="fa-solid fa-truck"></i>
@@ -101,7 +107,7 @@ rel="stylesheet" />
               <h4>Cafetera Moulinex</h4>
               </div>
               </div>
-            </div>
+            
           </article>
 
           <article>
@@ -139,6 +145,7 @@ rel="stylesheet" />
             </div> 
             </div> 
           </article>
+        </div>
       </section>
         
     </main>
@@ -163,7 +170,7 @@ productos. Es un beneficio de Mercado Puntos.
               ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
 porque estás siempre protegid@.
           </p>
-
+        </section>
           <h4>Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
     </footer>
   </body>
