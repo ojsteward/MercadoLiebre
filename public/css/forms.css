@@ -1,0 +1,223 @@
+/* 
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+font-family: 'Roboto', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------ HEAD ------------------------------------------ */
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #EAC926;
+    width: 100%;
+    padding-bottom: 3px;
+}
+
+.logoHeader {
+    width: 45%;
+    margin-right: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+input{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 15px;
+}
+
+ul{
+    margin-top: 15px;
+}
+
+li a {
+    color: black;
+    font-size: 12px;
+}
+
+.burger-menu {
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    background-color: #0022AA;
+    border-radius: 8px;
+}
+
+.fa-bars {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height: 30px; 
+    margin-left: 9px;
+    margin-top: 7px;
+}
+
+.home-banner img{
+    width: 100%;
+}
+
+/* ------------------------------------------ BODY ------------------------------------------*/
+main{
+    width: 90vw;
+    margin:auto;
+    text-align: center;
+}
+
+form{
+    border: solid 1px rgb(100, 100, 100);
+    padding: 5px;
+    margin-top: 10px;
+}
+
+button .enviar:hover{
+    background-color: #0022AA;
+} 
+
+/* .main-title{
+    font-size: 16px;
+    text-align: left;
+    margin-top: 12px;
+}
+
+article{
+    margin-top: 10px;
+    border: solid 1px #ebebeb;
+}
+
+img {
+    width: 30%;
+}
+
+.descripciones{
+    text-align: left;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+} */
+
+/* article div i{
+    position: relative;
+} */
+
+/* camioncito envio */
+/* main section article i{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+}
+
+.precio{
+    font-size: 18px;
+}
+
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    margin-left: 8px;
+}
+
+.precio-descuento{
+    display: flex;
+    margin-top: 5px;
+}
+
+article h4{
+    margin-top: 5px;
+} */
+
+/* ------------------------------------------ FOOTER ------------------------------------------ */
+
+footer{
+    margin-top: 25px;
+    text-align: center;
+}
+
+.footer-icons{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 2em;
+    text-align: center;
+    color: #1259c3;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.copyright{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 10px;
+}
+
+footer section h3{
+    font-size: 16px;
+}
+
+/* ------------------------- BREAKPOINTS - MEDIA QUERIES --------------------*/
+/* MOBILE */
+@media (max-width: 360px){
+    /* .descripciones h4{
+        display: none;
+    } */
+    nav {
+        display: none;
+    }
+}
+
+/* TABLETS */
+@media (min-width: 361px){
+    /* .all-articles{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    } */
+    .burger-menu{
+        display: none;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 769px){
+    /* .all-articles{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    } */
+}

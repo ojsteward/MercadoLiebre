@@ -1,0 +1,205 @@
+/* 
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+font-family: 'Roboto', sans-serif;
+ */
+
+ * {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+/*HEADER*/
+
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #EAC926;
+    width: 100%
+}
+
+
+
+
+.logo-header {
+    width: 45%;
+    margin-right: 60px;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: auto;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 15px;
+}
+
+li a {
+    color: black;
+    font-size: 11px;
+}
+
+ul{
+    margin-top: 15px;
+}
+
+.burger-menu {
+    width: 40px;
+    height: 40px;
+    margin: 10px auto;
+    background-color: #1259c3;
+    border-radius: 8px;
+}
+
+.fa-bars {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height: 30px; 
+    margin-left: 9px;
+    margin-top: 7px;
+}
+.logo-banner{
+    display: block;
+    width: 100%
+}
+
+/*MAIN*/
+main{
+    width: 90vw;
+    margin:auto;
+    text-align: center;
+}
+.main-title{
+        font-size: 24px;
+        text-align: left;
+        margin: 20px;
+        color: #6666;
+        margin-left: 10px;
+        margin-right: 10px;
+     }
+
+main section article i{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    position: absolute;
+}
+.fa-truck:hover{
+    transition: 800ms;
+    transform: rotate(-90deg);
+}
+
+article{
+    margin-top: 10px;
+    border: solid 1px #ebebeb;
+    width: 100%;
+    height: auto;
+}
+article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+img {
+    width: 20vw;
+    width: 100%;
+    height: auto;
+}
+
+.descripciones{
+    text-align: left;
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+.descripciones h4{
+    display: none;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento{
+    font-size: 16px;
+    color: #39b54a;
+    margin-left: 8px;
+}
+.precio-descuento{
+    display: flex;
+    margin-top: 5px;
+}
+
+main section h4{
+    font-size: 16px;
+}
+/*FOOTER*/
+
+.footer-icon{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 2em;
+    text-align: center;
+    color: #1259c3;
+    margin-bottom: 10px;
+}
+
+
+footer h4{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 10px;
+}
+footer section h3{
+    font-size: 16px;
+    text-align: center;
+}
+
+footer section p{
+    text-align: center;
+}
+
+
+/* ------------------------- BREAKPOINTS - MEDIA QUERIES --------------------*/
+/* MOBILE */
+@media (max-width: 360px){
+   
+    nav {
+        display: none;
+    }
+}
+
+/* TABLETS */
+@media (min-width: 361px){
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100)
+    }
+    .burger-menu{
+        display: none;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 769px){
+    
+}
