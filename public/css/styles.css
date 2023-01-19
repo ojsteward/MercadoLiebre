@@ -89,6 +89,10 @@ ul{
     margin-top: 15px;
 }
 
+ul i{
+    margin-left: 3%;
+}
+
 .burger-menu {
     width: 40px;
     height: 40px;
@@ -115,6 +119,9 @@ main{
     width: 90vw;
     margin:auto;
     text-align: center;
+}
+body{
+    background-color: #ebebeb;
 }
 .main-title{
         font-size: 24px;
@@ -149,6 +156,7 @@ article{
     border: solid 1px #ebebeb;
     width: 100%;
     height: auto;
+    background-color: white;
 }
 article:hover{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -229,17 +237,22 @@ footer section p{
     nav {
         display: none;
     }
+        .header-title{
+        display: none;
+        }
 }
 
 /* TABLETS */
 @media (min-width: 361px){
-    top-header{
+    div.top-header{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 40vw;
+               width: 40vw;
     }
     .burger-menu{
         display: none;
@@ -251,11 +264,53 @@ footer section p{
         flex-direction: row;
     }
     .lista1 {
+        display: flex;
+        margin-left: 10px;
+        list-style-type: none; 
+        margin-right: 7%;
     }
     .lista2 {
-       
+        display: flex;
+        margin-right: 10px;
+        list-style-type: none;  
+        margin-left: 7%;
     }
-    
+    li a{
+        font-size: 14px
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .products{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    img.logoHeader{
+        width: 25vw;
+        margin-top: 3%;
+    }
+    .search-field {
+        width: 30vw;
+        padding: 5px 30px 5px 5px;
+        border: none;
+        border-radius: 100px;
+        outline: none;
+        margin-top: 10%;
+    }
+    h3.header-title{
+        margin-top: 5%;
+        width: 30%;
+        font-size: 18px;
+    }
+    nav{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+
 }
 
 /* DESKTOP */
@@ -267,11 +322,6 @@ footer section p{
     footer i:hover{
         color: grey;
     }
-    .products{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
+    
 
 }
