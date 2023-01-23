@@ -27,7 +27,7 @@ header {
     width: 100%
 }
 img.logoHeader{
-    width: 50vw;
+    width: 45vw;
     margin-top: 20px;
     height: auto;
     margin-left: 10px;
@@ -211,23 +211,24 @@ footer{
     margin-top: 20px;
 }
 
+p{
+    font-size: 12px;
+    text-align: center;
+}
 
-footer h4{
-    margin-top: 40px;
+.copyright{
+    margin-top: 20px;
     margin-bottom: 15px;
     margin-left: 10px;
     text-align: center;
-    font-size: 15px;
+    font-size: 10px;
 }
+
 footer section h3{
     font-size: 16px;
     text-align: center;
 }
 
-footer section p{
-    text-align: center;
-    font-size: 12px;
-}
 
 
 /* ------------------------- BREAKPOINTS - MEDIA QUERIES --------------------*/
@@ -265,15 +266,16 @@ footer section p{
     }
     .lista1 {
         display: flex;
+        justify-content: flex-start;
+        justify-content: space-around;
         margin-left: 10px;
-        list-style-type: none; 
-        margin-right: 7%;
+        list-style-type: none;
     }
+    
     .lista2 {
         display: flex;
         margin-right: 10px;
-        list-style-type: none;  
-        margin-left: 7%;
+        list-style-type: none; 
     }
     li a{
         font-size: 14px
@@ -307,11 +309,28 @@ footer section p{
     }
     nav{
         margin-top: 1%;
-        margin-bottom: 1%;
+        margin-bottom: 1%
     }
-
-
+    .nav-buttons1{
+        margin-right: 8px;
+       
+    }
+    .nav-buttons2{
+        width: 15vw;
+        display: flex;
+        justify-content: center;
+    }
+    .fa-id-card{
+        margin-bottom: 3%;
+    }
+    .fa-right-to-bracket{
+        margin-bottom: 3%;
+    }
+    .fa-basket-shopping{
+         margin-bottom: 3%;
+    }
 }
+
 
 /* DESKTOP */
 @media (min-width: 769px){
@@ -322,6 +341,22 @@ footer section p{
     footer i:hover{
         color: grey;
     }
-    
+
+    footer section{
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        width: 80vw;
+    }
+    p{
+        margin-top: 1%;
+    }
+
+    .footer-article{
+        padding: 40px;
+    }
+
 
 }
+
+

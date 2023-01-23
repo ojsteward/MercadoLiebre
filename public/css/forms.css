@@ -27,11 +27,11 @@ header {
     padding-bottom: 3px;
 }
 
-.logoHeader {
-    width: 45%;
-    margin-right: 60px;
+img.logoHeader{
+    width: 45vw;
     margin-top: 20px;
-    margin-left: 20px;
+    height: auto;
+    margin-left: 10px;
 }
 
 input{
@@ -42,12 +42,7 @@ input{
     height: 20px;
     object-fit: cover;
 }
-img.logoHeader{
-    width: 35vw;
-    margin-top: 20px;
-    height: auto;
-    
-}
+
 
 div.top-header{
     display: flex;
@@ -72,7 +67,7 @@ li a {
     width: 40px;
     height: 40px;
     margin: 10px auto;
-    background-color: #0022AA;
+    background-color: #1259c3;
     border-radius: 8px;
 }
 
@@ -80,11 +75,13 @@ li a {
     font-size: 25px;
     color: white;
     text-align: center;
-    line-height: 30px; 
+    line-height: 30px;
     margin-left: 9px;
     margin-top: 7px;
 }
-
+body{
+    background-color: #ebebeb;
+}
 .home-banner img{
     width: 100%;
 }
@@ -96,21 +93,19 @@ main{
     text-align: center;
 }
 
-form{
-    border: solid 1px rgb(100, 100, 100);
+
+form.register{
     padding: 5px;
     margin-top: 10px;
 }
 
-button .enviar:hover{
-    background-color: #0022AA;
-} 
 .search-field {
     width: 35vw;
     padding: 5px 30px 5px 5px;
     border: none;
     border-radius: 100px;
     outline: none;
+    margin-left: 4vw;
 }
   
 .search-button {
@@ -128,73 +123,140 @@ button .enviar:hover{
 .search-bar{
     margin-top: 15px;
 }
-/* .main-title{
-    font-size: 16px;
-    text-align: left;
-    margin-top: 12px;
-}
-
-article{
-    margin-top: 10px;
-    border: solid 1px #ebebeb;
-}
-
-img {
-    width: 30%;
-}
-
-.descripciones{
-    text-align: left;
-    border-top: solid 1px #ebebeb;
-    padding: 15px;
-} */
-
-/* article div i{
-    position: relative;
-} */
-
-/* camioncito envio */
-/* main section article i{
-    color: #39b54a;
-    display: block;
-    font-size: 16px;
+/*LOGIN*/
+form.login{
     padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    right: 20px;
-    top: -15px;
+    margin-top: 10px;
 }
 
-.precio{
-    font-size: 18px;
-}
-
-.descuento{
+input.login{
+    margin-right: 10%;
+    margin-left: 10%;
+    
+    padding: 6px 12px;
     font-size: 16px;
-    color: #39b54a;
-    margin-left: 8px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+
+    width: 40vw;
+}
+button.enviar{
+margin-top: 2%;
+padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+
+    width: 40vw;
+}
+.enviar:hover{
+    background-color: #0022AA;
+} 
+
+/* REGISTER*/
+.input-register{
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+
+    width: 40vw;
+}
+button.send{
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 40vw;
+}
+button.reset{
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 40vw;
+}
+input.date{
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 40vw;
+}
+.reset:hover{
+    background-color:rgb(248, 40, 40);
+}
+.send:hover{
+    background-color: #0022AA;
+}
+div.datos-personales label{
+    display:block;
+    margin-top: 20px;
 }
 
-.precio-descuento{
-    display: flex;
-    margin-top: 5px;
+div.perfil-usuario{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-article h4{
-    margin-top: 5px;
-} */
-
-/* ------------------------------------------ FOOTER ------------------------------------------ */
+div.intereses{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+input#photo{
+    margin-bottom: 20px;
+}
+div.Foto label{
+    display:block;
+}
+------------------------------------ FOOTER ------------------------------------------ */
 
 footer{
     margin-top: 25px;
     text-align: center;
 }
 
-.footer-icons{
+.footer-icon{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -208,51 +270,155 @@ footer{
 
 p{
     font-size: 12px;
+    text-align: center;
 }
 
 .copyright{
     margin-top: 20px;
     margin-bottom: 15px;
     margin-left: 10px;
-    text-align: left;
+    text-align: center;
     font-size: 10px;
 }
 
 footer section h3{
     font-size: 16px;
+    text-align: center;
 }
+
+label{
+    font-size: 20px;
+}
+
 
 /* ------------------------- BREAKPOINTS - MEDIA QUERIES --------------------*/
 /* MOBILE */
 @media (max-width: 360px){
-    /* .descripciones h4{
-        display: none;
-    } */
+   
     nav {
         display: none;
     }
+        .header-title{
+        display: none;
+        }
 }
 
 /* TABLETS */
 @media (min-width: 361px){
-    /* .all-articles{
+    div.top-header{
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
-        flex-wrap: nowrap;
+        margin-left: 5%;
+        margin-right: 5%;
     }
     article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    } */
+               width: 40vw;
+    }
     .burger-menu{
         display: none;
     }
+    .products{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .lista1 {
+        display: flex;
+        justify-content: flex-start;
+        justify-content: space-around;
+        margin-left: 10px;
+        list-style-type: none;
+    }
+    
+    .lista2 {
+        display: flex;
+        margin-right: 10px;
+        list-style-type: none; 
+    }
+    li a{
+        font-size: 14px
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .products{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    img.logoHeader{
+        width: 25vw;
+        margin-top: 3%;
+    }
+    .search-field {
+        width: 30vw;
+        padding: 5px 30px 5px 5px;
+        border: none;
+        border-radius: 100px;
+        outline: none;
+        margin-top: 10%;
+    }
+    h3.header-title{
+        margin-top: 5%;
+        width: 30%;
+        font-size: 18px;
+    }
+    nav{
+        margin-top: 1%;
+        margin-bottom: 1%
+    }
+    .nav-buttons1{
+        margin-right: 8px;
+       
+    }
+    .nav-buttons2{
+        width: 15vw;
+        display: flex;
+        justify-content: center;
+    }
+    li.nav-buttons2 a{
+        margin-right: 3%;
+    }
+    .fa-id-card{
+        margin-bottom: 3%;
+    }
+    .fa-right-to-bracket{
+        margin-bottom: 3%;
+    }
+    .fa-basket-shopping{
+         margin-bottom: 3%;
+    }
 }
+
 
 /* DESKTOP */
 @media (min-width: 769px){
-    /* .all-articles{
+    article{
+        width: 20vw;
+    }
+    
+    footer i:hover{
+        color: grey;
+    }
+
+    footer section{
         display: flex;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-    } */
+        justify-content: space-around;
+        margin: auto;
+        width: 80vw;
+    }
+    p{
+        margin-top: 1%;
+    }
+
+    .footer-article{
+        padding: 40px;
+    }
+
+
 }
+
